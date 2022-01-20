@@ -1,0 +1,875 @@
+@keyframes rocking {
+    0% {
+        transform: translateY(0);
+        
+    }
+    25% {
+        transform: translateY(-5px);
+        
+    }
+    50% {
+        transform: translateY(0px);
+        
+    }
+    75% {
+        transform: translateY(5px);
+        
+    }
+    100% {
+        transform: translateY(0);
+        
+    }
+}
+.rocking {
+    animation: rocking 2.5s linear infinite;
+}
+
+
+@keyframes flashing {
+    0% {
+        background-color: burlywood;
+        
+    }
+    25% {
+        background-color: white;
+        
+    }
+    50% {
+        background-color: burlywood;
+        
+    }
+    75% {
+        background-color: white;
+        
+    }
+    100% {
+        background-color: burlywood;
+        
+    }
+}    
+    
+
+.flashing {
+    animation: flashing 2s linear infinite;
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        
+        
+    }
+    
+    75% {
+        opacity: 1;
+        
+        
+    }
+
+    100% {
+        opacity: 0;
+        
+    }
+}
+
+
+
+.appear-delay-3 {
+    animation: appear 7s 3s forwards;
+}
+.appear-delay-9 {
+    animation: appear 7s 9s forwards;
+}
+.appear-delay-15 {
+    animation: appear 7s 17s forwards;
+}
+.appear-delay-23 {
+    animation: appear 7s 24s forwards;
+}
+
+
+@keyframes fade-in-d3 {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba($color: #000, $alpha: 1.0);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 0px rgba($color: #000, $alpha: 1.0);
+    }
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 0px rgba($color: #000, $alpha: 1.0);
+
+    }
+    100% {
+        text-shadow: 0 0 0px rgba($color: #000, $alpha: 1.0);
+        opacity: 0;
+    }
+}
+.fade-in-d3 {
+    animation: fade-in-d3 5s 1s  forwards;
+}
+
+
+
+@keyframes kid-a {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        
+    }
+    
+    75%{
+        opacity: 1;
+        transform: scale(1);
+    }  
+    85% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    95%{
+        opacity: 1;
+        
+
+    }
+    100% {
+        transform: scale(0.01);
+    }
+}
+
+.kid-a {
+    animation: kid-a 7s 7s forwards;
+}
+
+@keyframes kid2-a{
+
+    0% {
+        opacity: 1;
+        transform: scale(0.01);
+    }
+    1% {
+        
+        opacity: 1;
+        transform: scale(0.01);
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+    
+    100% {
+        opacity: 0;
+        transform: scale(1);
+        
+    }
+    
+}
+
+.kid2-a {
+    animation: kid2-a 10s 24s forwards
+}
+
+@keyframes op-a {
+    0% {
+        opacity: 1;
+        transform: translateX(-400px);
+    }
+   25% {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+    99% {
+        opacity: 1;
+        transform: translateX(600px);
+
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(600px);
+        
+    }
+    
+}
+.op-a {
+    animation: op-a 7s 16s forwards
+}
+
+
+
+
+
+@keyframes falling {
+    0% { 
+        opacity: 1;  
+        transform: translateY(-400px) scalex(1);
+        animation-timing-function: cubic-bezier(0.24, 0.75, 1, 0.72);
+    }
+    45% { 
+        
+        transform: translateY(140px) scalex(1);
+    }
+    50% { 
+        
+        transform: translateY(150px) scalex(1.3);
+    }
+    70% {
+        
+        transform: translateY(80px) scalex(1);
+    }
+    80% { 
+        
+         transform: translateY(140px) scalex(1);
+    }
+    85% { 
+        
+        transform: translateY(150px) scalex(1.2);
+    }
+    93% { 
+        
+        transform: translateY(120px) scalex(1);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(150px) scalex(1);
+    }
+  }
+  .falling {
+      animation: falling 2s 1s forwards 1;
+  }
+
+  @keyframes bounce {
+    0% { 
+        opacity: 1;  
+        transform: scalex(1);
+        animation-timing-function: cubic-bezier(0.24, 0.75, 1, 0.72);
+    }
+    45% { 
+        
+        transform: scalex(1);
+    }
+    50% { 
+        
+        transform: scalex(1.3);
+    }
+    70% {
+        
+        transform: scalex(1);
+    }
+    80% { 
+        
+         transform: scalex(1);
+    }
+    85% { 
+        
+        transform: scalex(1.2);
+    }
+    93% { 
+        
+        transform: scalex(1);
+    }
+    100% { 
+        opacity: 1;
+        transform: scalex(1);
+    }
+  }
+
+  .bounce {
+      animation: bounce 2s 1s forwards 1;
+  }
+  
+  .hide {
+    opacity: 0;
+}
+  .disappear {
+      display: none;
+  }
+
+@keyframes blinking {
+    from {
+      text-shadow:0px 3px 12px $orange,
+        
+    }
+  }
+
+
+@keyframes move_down {
+    0% {
+        transform: translateY(0px);
+        
+    }
+    100% {
+        transform: translateY(650px);
+        
+    }
+}  
+
+.move_down {
+    animation: move_down 1s ease-out forwards;
+}
+
+@keyframes fade-out {
+    0% {
+
+        opacity: 1;
+        text-shadow: 0 0 0px;
+        
+
+
+    }    
+    99% {
+        opacity: 0;
+        text-shadow: 0 0 30px;
+        
+    }
+    100% {
+        opacity: 0;
+        text-shadow: 0 0 30px;
+    }
+}
+
+.fade-out {
+    animation: fade-out 3s forwards;
+    
+}
+
+
+@keyframes typewriter {
+    100% {
+        left: 100%
+    }
+}
+.typewriter {
+    animation: typewriter 2s ease forwards;
+}
+
+
+@keyframes move-up {
+    to {
+        transform: translateY(-10rem);
+    }
+    
+}
+
+.move-up {
+    animation: move-up 2s cubic-bezier(0.07, 0.28, 0.47, 1.41) forwards 1;
+}
+
+@keyframes moving-down {
+    to {
+        transform: translateY(2em);
+    }
+}
+@keyframes moving-up {
+    to {
+        transform: translateY(-2em);
+    }
+}
+
+.moving-up {
+    
+    animation: moving-up 1s ease-in forwards;
+
+}
+
+.moving-down {
+
+    animation: moving-down 1s ease-in forwards;
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 3s ease-in forwards 1;
+}
+
+@keyframes feel {
+    50% {
+        transform: translateX(8em) translateY(0);
+    }
+    100% {
+        transform: translateX(8em) translateY(2em);
+
+    }
+    
+}
+
+.feel {
+    animation: feel 3s ease-in-out forwards 1;
+}
+
+@keyframes pumping {
+    10% {
+        transform: scale(2);
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+    
+}
+
+.pumping {
+    animation: pumping 1.6s 3.1s forwards 1;
+}
+
+.show {
+    opacity: 1;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+//Choice Section animation 
+
+.slide-in {
+    animation: slide-in 4s ease forwards;
+}
+
+@keyframes piano-slide-in {
+    0% {
+        
+        left: -50%;
+        transform: scale(0.1);
+    }
+    100% {
+    
+        transform: scale(1) translateX(-50%);
+        
+    }
+}
+
+
+.piano-slide-in {
+    animation: piano-slide-in 1s ease-in-out forwards;
+}
+
+
+
+@keyframes violin-slide-in {
+
+}
+
+@keyframes text-bouncing {
+    0% {
+        transform: scaleX(1) translateY(0);
+    }
+    10% {
+        transform: scaleX(1.1); 
+    }
+    20% {
+        transform: scaleX(1.02);
+    }
+    30% {
+        transform: scaleX(1.08);
+    }
+    40% {
+        transform: scaleX(1) translateY(-10%);
+    }
+    100% {
+        transform: scaleX(1) translateY(0);
+    }
+}
+
+.text-bouncing {
+    animation: text-bouncing 1s ease-out forwards;
+}
+
+
+@keyframes instrument-falling {
+    0% { 
+        opacity: 1;  
+        transform: translateY(-90%) scalex(1);
+        animation-timing-function: ease-in;
+    }
+    45% { 
+        
+        transform: translateY(-5%) scalex(1);
+    }
+    50% { 
+        
+        transform: translateY(0) scalex(1.3);
+    }
+    70% {
+        
+        transform: translateY(-30%) scalex(1);
+    }
+    80% { 
+        
+         transform: translateY(-20%) scalex(1);
+    }
+    85% { 
+        
+        transform: translateY(0) scalex(1.2);
+    }
+    93% { 
+        
+        transform: translateY(-10%) scalex(1);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0) scalex(1);
+    }
+  }
+
+  .instrument-falling {
+      animation: instrument-falling 1s forwards;
+  }
+
+@keyframes mraz-show-up {
+    0% {
+        transform: translateX(-150%);
+        
+    }
+    
+  
+    100% {
+        transform: translateX(-18%) rotate(15deg);
+        
+                          
+    }
+}
+.mraz-show-up {
+    animation: mraz-show-up 1s ease forwards;
+}
+
+@keyframes load-bar {
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes impro-animation {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+.impro-animation {
+    animation: impro-animation 2s 6s forwards;
+}
+
+
+
+
+// Storydays animation 
+
+
+//stanley animation 
+
+@keyframes loadTextBox {
+    
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes unloadTextBox {
+    0% {
+        opacity: 0;
+    }
+}
+
+.loadTextBox {
+    animation: loadTextBox 4s 5s ease forwards;
+}
+
+@keyframes subtitleBar {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.subtitleBar {
+    animation: subtitleBar 1s ease-in forwards;
+}
+
+.unloadTextBox {
+    animation: unloadTextBox 4s ease forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    
+}
+
+.chaptertyping {
+    animation: typing 1s steps(11);
+}
+.titletyping {
+    animation: typing 3s steps(28);
+}
+
+@keyframes  outOfScreenRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translateX(100rem);
+
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100rem);
+    }
+}
+
+
+@keyframes  outOfScreenLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translateX(-100rem);
+
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100rem);
+    }
+}
+
+.movingLeft {
+    animation: outOfScreenLeft 2s ease-out forwards;
+
+}
+.movingRight {
+    animation: outOfScreenRight 2s ease-out forwards;
+
+}
+
+.openLeft {
+    transform: rotateY(90deg);
+}
+
+.openRight {
+    transform: rotateY(-90deg);
+}
+
+
+
+.closedoor{
+    transform: rotateY(0);
+}
+
+
+
+// Codingdays animation 
+
+@keyframes dropping-on-box {
+    0% {
+        transform: translateY(0);
+        
+        
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(8rem);
+        
+        opacity: 0;
+    }
+}
+
+.dropping-on-box {
+    animation: dropping-on-box 1s 1s forwards;
+}
+
+.show-none {
+    display: none;
+}
+
+
+.instructiontyping {
+    animation: typing 3s steps(31);
+}
+
+
+@keyframes upMovingText {
+    
+    10% {
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+        
+    }
+    100% {
+        opacity: 0;
+        top: 300%;
+    }
+
+
+}
+
+.upMovingText {
+    animation: upMovingText 2.5s ease forwards;
+}
+
+.mainLinesTyping {
+    animation: typewriter 3s ease forwards;
+}
+
+@keyframes orbiting_0 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes orbiting_1 {
+    to {
+        transform: rotate(396deg);
+    }
+}
+@keyframes orbiting_2 {
+    to {
+        transform: rotate(432deg);
+    }
+}
+@keyframes orbiting_3 {
+    to {
+        transform: rotate(468deg);
+    }
+}
+@keyframes orbiting_4 {
+    to {
+        transform: rotate(504deg);
+    }
+}
+@keyframes orbiting_5 {
+    to {
+        transform: rotate(540deg);
+    }
+}
+@keyframes orbiting_6 {
+    to {
+        transform: rotate(576deg);
+    }
+}
+@keyframes orbiting_7 {
+    to {
+        transform: rotate(612deg);
+    }
+}
+@keyframes orbiting_8 {
+    to {
+        transform: rotate(648deg);
+    }
+}
+@keyframes orbiting_9 {
+    to {
+        transform: rotate(684deg);
+    }
+}
+
+
+@keyframes unite {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.unite {
+    animation: unite 1.5s linear forwards;
+}
+
+@keyframes blinkingBar {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes lifting {
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.appearUp {
+    animation: lifting 2s ease-out forwards;
+}
+
+.jayTyping {
+    animation: typing 1s steps(10);
+}
+
+
+@keyframes hompageTyping {
+    to {
+        width: 4ch;
+    }
+}
+@keyframes hompageTyping_2 {
+    to {
+        width: 15ch;
+    }
+}
+.hompageTyping {
+    animation: hompageTyping .5s steps(4) forwards;
+}
+
+.hompageTyping_2 {
+    animation: hompageTyping_2 1.5s steps(15) forwards;
+}
+
+
+
+
+
+

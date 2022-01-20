@@ -1,0 +1,73 @@
+.storydays {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.storydays::-webkit-scrollbar {
+  display: none;
+}
+
+.storydays video {
+  height: 100%;
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.storydays section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.storydays .stanley {
+  position: relative;
+}
+
+.storydays .stanley-overlay {
+  position: absolute;
+  background-color: rgba(2, 2, 2, 0.966);
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+}
+
+.storydays .witcher {
+  position: relative;
+}
+
+.storydays .witcher video {
+  height: 100%;
+}
+
+.storydays .witcher-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.storydays .planescape {
+  position: relative;
+}
+
+.storydays .planescape video {
+  height: 100%;
+}
+
+.storydays .pathologic {
+  position: relative;
+}
+
+.storydays .pathologic video {
+  height: 100%;
+}
+
+.storydays .death-stranding {
+  position: relative;
+}
+
+.storydays .death-stranding video {
+  height: 100%;
+}
+/*# sourceMappingURL=storydays.css.map */

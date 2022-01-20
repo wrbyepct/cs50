@@ -1,0 +1,384 @@
+.earlydays {
+    
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
+    
+    &-box {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .text-box {
+            height: 50vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            font-style: italic;
+            .text-wrapper {
+                height: 100%;
+                position: relative;
+            }
+            .subtitle {
+                
+                
+               
+                font-size: 1rem;
+                font-family: $poppinfont;
+                font-style: normal;
+                color: wheat;
+                text-shadow: .5px .5px 1px rgb(17, 17, 17);
+                transition: opacity 0.8s ease;
+                position: absolute;
+                @include breakpoint-up(medium) {
+                    font-size: 1.25rem;
+                    
+                }
+                @include breakpoint-up(large) {
+                    font-size: 1.5rem;
+                    
+                }
+                &-bar {
+                    transform: translateY(-100%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    height: 2.75rem;
+                    position: relative;
+                    background-color: rgba(5, 5, 5, 0.568);
+                    transition: transform .5s ease-in;
+                    &.subtitleLoaded {
+                        transform: translateY(0);
+                    }
+                    @include breakpoint-up(medium) {
+                        height: 3.75rem;
+                    }
+                }
+                
+            }
+            
+            
+
+            font-size: $font-big;
+            font-weight: 600;
+            
+
+             &-t {
+                width: 100%;
+                position: absolute;
+                
+                
+                &.t1 {
+                    color: transparent;
+                    text-shadow: 0 0 20px rgba($color: #000, $alpha: 1.0);   
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    transform: translateY(-50%);                      
+                }
+               
+                
+            }
+            
+        }
+        .images-box {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+            .image {
+                
+                
+                       
+                
+                position: absolute;
+                
+                
+                left: 50%; 
+                transform: translateX(-50%) translateY(5%);
+                max-width: 50%;
+                max-height: 70%;
+                
+                overflow: hidden;
+                border-radius: 20px;
+                border: 5px double;
+                transition: opacity 4s ease;
+                &.kid {
+                    border-color: burlywood;
+                }
+                &.one-piece{
+                    border-color: rgb(238, 126, 98);
+                }
+                &.kid2 {
+                    border-color: rgb(135, 205, 222);
+                }
+                @include breakpoint-down(small) {
+                    max-width: 90%;
+                }
+                
+                
+            }
+            
+            
+            
+
+        }
+        .cube-box {
+            position: absolute;
+            text-align: center;
+            top: 10%;
+            .cube-text {
+                
+                position: absolute;
+                font-size: 2.5rem;
+                font-weight: 600;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 4rem;
+                z-index: 100;
+                &-counter {
+                    margin-top: 1.5rem;          
+                }
+                &-ready {
+                    &.blinking {
+                        font-size: 2.5rem;
+                        color: $orange;
+                        
+                        font-weight: 700;
+                        
+                        animation: blinking .75s ease-out infinite;
+                        text-shadow: 0px 0px 1px $orange, 0px 0px 7px $orange;  
+                    }
+                }
+                .comments {
+                    
+                    margin-top: .5rem;
+                    font-size: .875rem;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: end;
+                    color: $lightGreen;
+                    line-height: 1.8;
+                    .wr {
+                        color: black;
+                        span {
+                            color: red;
+                            font-size: 1rem;
+                            font-weight: 700;
+                        }
+                    }
+                    .yr {
+                        span {
+                            color: red;
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                        }          
+                    }
+                    
+                }
+                
+            }
+            &-cube {
+                opacity: 0;
+
+            }
+            img {
+                width: 100%;
+                min-width: 36.5625rem;
+                @include breakpoint-up(medium) {
+                    max-width: 90%;
+                }
+                @include breakpoint-up(large) {
+                    max-width: 80%;
+                }
+
+            }
+            &-btn {
+                border: 2px solid black;
+                padding: .5rem 1.5rem;
+                border-radius: 2rem;
+                transition: all 200ms ease-in-out;
+                font-size: .875rem;
+                opacity: 0;
+                z-index: 100;
+                @include breakpoint-up(medium) {
+                    font-size: 1.25rem;
+                }
+                @include breakpoint-up(large) {
+                    font-size: 1.5rem;
+                }
+                &.clicked-btn {
+                    transform: scale(1.1);
+                    background-color: rgb(241, 177, 92);
+                    font-weight: 700;           
+                }
+        
+
+            &:hover {
+                
+                transform: scale(1.1);
+                background-color: rgb(241, 177, 92);
+                font-weight: 700;
+            }
+                               
+            }
+            
+        }
+    }
+    .but-box {
+        
+        z-index: -1;
+        transform: translateY(10%);
+        &-text {
+            
+            .line {
+                position: relative;
+                line-height: 1.8;
+                font-size: 1rem;
+                font-family: 'Source Code Pro', monospace;
+                @include breakpoint-up(medium) {
+                    font-size: 1.25rem;
+                }
+                @include breakpoint-up(large) {
+                    font-size: 1.5rem;
+                }
+                
+            }   
+            
+            .line::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: white;
+                          
+            }
+
+
+        }      
+        
+    }
+    
+    
+    
+}
+.music {
+    position: relative;
+    height: 55vh;
+    width: 100%;
+    transform: translateY(-100%);
+    
+
+    
+    
+    &-box.note {
+        position: absolute;
+        background-image: url('/app/images/music_note.gif');
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;    
+        animation: fade-out 1s 3.1s 1;
+        
+        z-index: 2;
+        
+    }
+    &-btn {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 1.25rem;
+        z-index: 1;
+        @include breakpoint-up(large) {
+            font-size: 2rem;
+        }
+        
+        
+
+        &-cta {
+            width: 100%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+
+            text-align: center;
+            padding: .5rem 1.5rem;
+
+            transition: transform 200ms ease-in-out;
+
+            position: relative;
+
+            overflow: hidden;
+            &.clicked {
+                transform: scale(1.1);
+                font-weight: 600;
+
+            }
+            &:hover {
+                
+                transform: scale(1.1);
+                font-weight: 600;
+                &::after {
+                
+                    content: "";
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+    
+                    background-image: url(https://media.giphy.com/media/lqxxKmzFXFDyw/giphy.gif);
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+    
+                    opacity: .3;
+                    
+                    position: absolute;
+                    
+                }
+
+            }
+            .music-words {
+                
+                position: relative;
+                &.fill:before {
+                    content: "FEEL";
+                    top: -2em;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    position: absolute;
+                }
+                &.me:before {
+                    content: "SWING";
+                    top: -4em;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    position: absolute;
+                }
+                
+            }
+
+                
+        }
+        
+       
+    }
+    
+}
+
+
+
